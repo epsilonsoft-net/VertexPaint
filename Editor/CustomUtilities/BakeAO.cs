@@ -85,7 +85,7 @@ namespace JBooth.VertexPainterPro
          Light[] aoLights = null;
          if (bakeLighting)
          {
-            aoLights = GameObject.FindObjectsOfType<Light>();
+            aoLights = GameObject.FindObjectsByType<Light>(FindObjectsSortMode.None);
          }
          int sample = 0;
          int numVerts = 0;

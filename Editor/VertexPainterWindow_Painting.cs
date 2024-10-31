@@ -1253,7 +1253,7 @@ namespace JBooth.VertexPainterPro
          RevertMat();
 
          List<PaintJob> pjs = new List<PaintJob>();
-         Object[] objs = Selection.GetFiltered(typeof(GameObject), SelectionMode.Editable | SelectionMode.OnlyUserModifiable | SelectionMode.Deep);
+         Object[] objs = Selection.GetFiltered(typeof(GameObject), SelectionMode.Editable | SelectionMode.Deep);
          for (int i = 0; i < objs.Length; ++i)
          {
             GameObject go = objs[i] as GameObject;

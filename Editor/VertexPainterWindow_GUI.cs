@@ -461,9 +461,9 @@ namespace JBooth.VertexPainterPro
             if (brushColorMode == BrushColorMode.Overlay || brushColorMode == BrushColorMode.Normal)
             {
                bool showAlpha = brushMode != BrushTarget.RGB;
-               brushColor = EditorGUILayout.ColorField(new GUIContent("Brush Color"), brushColor, true, showAlpha, false, null);
+               brushColor = EditorGUILayout.ColorField(new GUIContent("Brush Color"), brushColor, true, showAlpha, false);
 
-               if (GUILayout.Button("Reset Palette", EditorStyles.miniButton, GUILayout.Width(80), GUILayout.Height(16)))
+			   if (GUILayout.Button("Reset Palette", EditorStyles.miniButton, GUILayout.Width(80), GUILayout.Height(16)))
                {
                   if (swatches != null)
                   {
